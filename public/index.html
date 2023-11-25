@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./weather.js"></script>
+  </head>
+  <body class="blurred">
+    <h1 class="location_title" id="location_title">America/Chicago</h1>
+    <div class="top">
+      <div class="img_container">
+        <img
+          src="./img/image_processing20220801-17461-1qbptiv.png"
+          id="main_icon" />
+        <h2 class="current_temp" id="current_temp">24°</h2>
+      </div>
+      <div class="weather_details">
+        <div class="high_container">
+          <div class="high">High</div>
+          <div class="high_value" id="high_value">32°</div>
+        </div>
+        <div class="low_container">
+          <div class="low">Low</div>
+          <div class="low_value" id="low_value">18°</div>
+        </div>
+        <div class="fl_high_container">
+          <div class="fl_high">FL High</div>
+          <div class="fl_high_value" id="fl_high_value">27°</div>
+        </div>
+        <div class="fl_low_container">
+          <div class="fl_low">FL Low</div>
+          <div class="fl_low_value" id="fl_low_value">12°</div>
+        </div>
+        <div class="wind_container">
+          <div class="wind">Wind</div>
+          <div class="wind_value" id="wind_value">9km/h</div>
+        </div>
+        <div class="precip_container">
+          <div class="precip">Precip</div>
+          <div class="precip_value" id="precip_value">0.1mm</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="week_details_container">
+      <div class="monday_container day_container">
+        <div class="monday dayName">Monday</div>
+        <div class="monday_value dayValue" id="monday_value">24°</div>
+      </div>
+      <div class="tuesday_container day_container">
+        <div class="tuesday dayName">Tuesday</div>
+        <div class="tuesday_value dayValue" id="tuesday_value">24°</div>
+      </div>
+      <div class="wednesday_container day_container">
+        <div class="wednesday dayName">Wednesday</div>
+        <div class="wednesday_value dayValue" id="wednesday_value">24°</div>
+      </div>
+      <div class="thursday_container day_container">
+        <div class="thursday dayName">Thursday</div>
+        <div class="thursday_value dayValue" id="thursday_value">24°</div>
+      </div>
+      <div class="friday_container day_container">
+        <div class="friday dayName day_container">Friday</div>
+        <div class="friday_value dayValue" id="friday_value">24°</div>
+      </div>
+      <div class="saturday_container day_container">
+        <div class="saturday dayName">Saturday</div>
+        <div class="saturday_value dayValue" id="saturday_value">24°</div>
+      </div>
+      <div class="sunday_container day_container">
+        <div class="sunday dayName">Sunday</div>
+        <div class="sunday_value dayValue" id="sunday_value">24°</div>
+      </div>
+    </div>
+  </body>
+</html>

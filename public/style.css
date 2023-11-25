@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c111e;
+}
+
+.blurred {
+  filter: blur(3px);
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.location_title {
+  font-size: 2rem;
+  color: #eff2f1;
+  text-align: center;
+  margin-right: 26rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#main_icon {
+  width: 200px;
+}
+
+.img_container {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border-right: 3px solid #ffffd2;
+}
+
+.current_temp {
+  text-align: center;
+  color: #eff2f1;
+  font-size: 3rem;
+}
+
+.weather_details {
+  background-color: #222a3c;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.high,
+.low,
+.fl_low,
+.fl_high,
+.wind,
+.precip {
+  color: #6f7584;
+  font-size: 0.75rem;
+  text-align: left;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+}
+
+.high_value,
+.low_value,
+.fl_low_value,
+.fl_high_value,
+.wind_value,
+.precip_value {
+  color: #eff2f1;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.week_details_container {
+  max-width: 60vw;
+  margin-inline: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.monday_container,
+.tuesday_container,
+.wednesday_container,
+.thursday_container,
+.friday_container,
+.saturday_container,
+.sunday_container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  transition: 0.4s ease-in-out;
+  width: 8rem;
+  background-color: #222a3c;
+}
+
+.monday,
+.tuesday,
+.wednesday,
+.thursday,
+.friday,
+.saturday,
+.sunday {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #6f7584;
+}
+
+.monday_value,
+.tuesday_value,
+.wednesday_value,
+.thursday_value,
+.friday_value,
+.saturday_value,
+.sunday_value {
+  color: #eff2f1;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  .top {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .location_title {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .img_container {
+    margin-inline: auto;
+    border-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .weather_details {
+    font-size: 1rem;
+    margin-inline: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .week_details_container {
+    max-width: 100%;
+    margin-inline: 0.5rem;
+  }
+}
